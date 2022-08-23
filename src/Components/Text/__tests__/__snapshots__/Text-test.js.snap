@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Text with bold font weight 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      undefined,
+    ]
+  }
+>
+  Testing Content
+</Text>
+`;
+
+exports[`Text Text with bold font weight, font size, color 1`] = `
+<Text
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontSize": 24,
+      },
+      Object {
+        "color": "blue",
+      },
+      undefined,
+    ]
+  }
+>
+  Testing Content
+</Text>
+`;
+
+exports[`Text Text with normal content 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "System",
+        "fontWeight": "400",
+      },
+      undefined,
+    ]
+  }
+>
+  Testing Content
+</Text>
+`;

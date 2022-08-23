@@ -1,0 +1,532 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Test if button renders properly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      false,
+      false,
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 56,
+          "minWidth": 56,
+        },
+        Object {
+          "height": 112,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "#FFF",
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 8,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": "100%",
+                "justifyContent": "center",
+              },
+              undefined,
+              Object {},
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginHorizontal": 4,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button Test if button renders properly with compact props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      false,
+      false,
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 56,
+          "minWidth": 56,
+        },
+        Object {
+          "height": 112,
+        },
+        Object {
+          "height": "auto",
+          "minWidth": "auto",
+        },
+        Object {
+          "backgroundColor": "#FFF",
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 8,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": "100%",
+                "justifyContent": "center",
+              },
+              undefined,
+              Object {},
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginHorizontal": 4,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button Test if button renders properly with size medium props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      false,
+      false,
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 48,
+          "minWidth": 48,
+        },
+        Object {
+          "height": 96,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "#FFF",
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 8,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": "100%",
+                "justifyContent": "center",
+              },
+              undefined,
+              Object {},
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginHorizontal": 4,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button Test if button renders properly with size small props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      false,
+      false,
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 32,
+          "minWidth": 32,
+        },
+        Object {
+          "height": 64,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "#FFF",
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "overflow": "hidden",
+          },
+          Object {
+            "borderRadius": 8,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "height": "100%",
+                "justifyContent": "center",
+              },
+              undefined,
+              Object {},
+            ]
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginHorizontal": 4,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button Test if button renders properly with text style and size medium props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      false,
+      false,
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 48,
+          "minWidth": 48,
+        },
+        Object {
+          "height": 96,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+            },
+            undefined,
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginHorizontal": 4,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Button Test if button renders properly with text style and size small props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      false,
+      false,
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderStyle": "solid",
+        },
+        Object {
+          "height": 32,
+          "minWidth": 32,
+        },
+        Object {
+          "height": 64,
+        },
+        undefined,
+        Object {
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "borderRadius": 8,
+          "borderWidth": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "height": "100%",
+              "justifyContent": "center",
+            },
+            undefined,
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginHorizontal": 4,
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;

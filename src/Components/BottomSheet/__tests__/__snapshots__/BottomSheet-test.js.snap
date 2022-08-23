@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet BottomSheet with visible props 1`] = `
+<View
+  accessibilityViewIsModal={true}
+  backdropComponent={[Function]}
+  backgroundComponent={null}
+  handleComponent={[Function]}
+  index={1}
+  onChange={[Function]}
+  snapPoints={
+    Array [
+      -1,
+      0,
+    ]
+  }
+  style={Object {}}
+  testID="bottom_sheet_test_id"
+>
+  <View
+    onLayout={[Function]}
+    testID="bottom_sheet_content_test_id"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "System",
+            "fontWeight": "400",
+          },
+          undefined,
+        ]
+      }
+    >
+      Testing Bottom Sheet
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomSheet BottomSheet without visible props 1`] = `
+<View
+  accessibilityViewIsModal={true}
+  backdropComponent={[Function]}
+  backgroundComponent={null}
+  handleComponent={[Function]}
+  index={1}
+  onChange={[Function]}
+  snapPoints={
+    Array [
+      -1,
+      0,
+    ]
+  }
+  style={Object {}}
+  testID="bottom_sheet_test_id"
+>
+  <View
+    onLayout={[Function]}
+    testID="bottom_sheet_content_test_id"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "System",
+            "fontWeight": "400",
+          },
+          undefined,
+        ]
+      }
+    >
+      Testing Bottom Sheet
+    </Text>
+  </View>
+</View>
+`;

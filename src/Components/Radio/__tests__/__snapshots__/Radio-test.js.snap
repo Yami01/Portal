@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio Radio Disable Render 1`] = `
+<View
+  accessibilityLiveRegion="polite"
+  accessibilityRole="radio"
+  accessibilityState={
+    Object {
+      "checked": false,
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+      },
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "borderColor": "rgba(0, 0, 0, 0.26)",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "height": 20,
+        "margin": 8,
+        "width": 20,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Radio Radio Render 1`] = `
+<View
+  accessibilityLiveRegion="polite"
+  accessibilityRole="radio"
+  accessibilityState={
+    Object {
+      "checked": false,
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "overflow": "hidden",
+      },
+      Object {
+        "borderRadius": 18,
+      },
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "borderColor": "#1292B4",
+        "borderRadius": 10,
+        "borderWidth": 2,
+        "height": 20,
+        "margin": 8,
+        "width": 20,
+      }
+    }
+  />
+</View>
+`;

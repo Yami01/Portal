@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon is icon render properly 1`] = `
+<View
+  0="i"
+  1="c"
+  2="o"
+  3="n"
+  4="T"
+  5="e"
+  6="s"
+  7="t"
+  8="I"
+  9="d"
+  style={
+    Array [
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
