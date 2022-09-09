@@ -6,12 +6,24 @@
  *
  */
 
-import React, { memo, useCallback, useMemo } from "react"
-import { Animated, TouchableWithoutFeedback, useWindowDimensions, View } from "react-native"
-import { ActivityIndicator, TouchableRipple, useTheme } from "react-native-paper"
-import Color from "color"
-import type { AbstractComponent, Node } from "React"
-import type { TextStyleProp, ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
+import React, { memo, useCallback, useMemo } from 'react'
+import {
+  Animated,
+  TouchableWithoutFeedback,
+  useWindowDimensions,
+  View,
+} from 'react-native'
+import {
+  ActivityIndicator,
+  TouchableRipple,
+  useTheme,
+} from 'react-native-paper'
+import Color from 'color'
+import type { AbstractComponent, Node } from 'React'
+import type {
+  TextStyleProp,
+  ViewStyleProp,
+} from 'react-native/Libraries/StyleSheet/StyleSheet'
 
 import {
   BOTTOM_ICON_COLOR,
@@ -27,13 +39,13 @@ import {
   LARGE_BUTTON_HEIGHT,
   MEDIUM_BUTTON_HEIGHT,
   SMALL_BUTTON_HEIGHT,
-} from "./config"
+} from './config'
 
-import ButtonStyles from "./styles"
-import type { IconPropsType, PropsType } from "./types"
-import Colors from "react-native/Libraries/NewAppScreen/components/Colors"
-import Text from "@/Components/Text"
-import Icons from "@/Assets/Icons"
+import ButtonStyles from './styles'
+import type { IconPropsType, PropsType } from './types'
+import Colors from 'react-native/Libraries/NewAppScreen/components/Colors'
+import Text from '@/Components/Text'
+import Icons from '@/Assets/Icons'
 
 const Button: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const {

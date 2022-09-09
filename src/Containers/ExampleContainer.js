@@ -1,11 +1,18 @@
-import React, { useEffect, useState } from "react"
-import { ActivityIndicator, ScrollView, Text, TextInput, TouchableOpacity, View } from "react-native"
-import { useDispatch } from "react-redux"
-import { useTranslation } from "react-i18next"
-import { Brand } from "@/Components"
-import { useTheme } from "@/Hooks"
-import { useLazyFetchOneQuery } from "@/Services/modules/users"
-import { changeTheme } from "@/Store/Theme"
+import React, { useEffect, useState } from 'react'
+import {
+  ActivityIndicator,
+  ScrollView,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native'
+import { useDispatch } from 'react-redux'
+import { useTranslation } from 'react-i18next'
+import { Brand } from '@/Components'
+import { useTheme } from '@/Hooks'
+import { useLazyFetchOneQuery } from '@/Services/modules/users'
+import { changeTheme } from '@/Store/Theme'
 
 const ExampleContainer = () => {
   const { t } = useTranslation()
