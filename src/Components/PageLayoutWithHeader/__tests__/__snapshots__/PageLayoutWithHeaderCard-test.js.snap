@@ -1,0 +1,442 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageLayoutWithHeader render with animated header properly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    bounces={false}
+    scrollEventThrottle={16}
+    style={Object {}}
+    testID="scrollViewTestId"
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#d31145",
+              "borderBottomLeftRadius": 16,
+              "flexDirection": "row",
+              "overflow": "visible",
+              "paddingHorizontal": 16,
+              "width": "100%",
+              "zIndex": 98,
+            },
+            Object {
+              "backgroundColor": "#d31145",
+              "paddingBottom": AnimatedValue {
+                " __value": 46,
+              },
+              "paddingTop": 36,
+            },
+            false,
+            undefined,
+          ]
+        }
+        testID="headerTestId"
+      >
+        <View
+          accessibilityHint="This is accessible header"
+          accessibilityLabel="Accessible Header"
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                  "flexGrow": 1,
+                  "flexShrink": 1,
+                },
+                Object {
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <View
+              accessibilityRole="text"
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  false,
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                  },
+                ]
+              }
+              testID="titleIconTextTestID"
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "flex-start",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  numberOfLines={1}
+                  style={
+                    Array [
+                      undefined,
+                      Array [
+                        Object {
+                          "fontSize": 17,
+                          "lineHeight": 24,
+                        },
+                        Object {
+                          "color": "#fff",
+                        },
+                      ],
+                    ]
+                  }
+                >
+                  Header
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "elevation": 99,
+              "zIndex": 99,
+            },
+            Object {
+              "marginTop": AnimatedValue {
+                " __value": -30,
+              },
+            },
+          ]
+        }
+      >
+        <View>
+          <View>
+            <Text>
+              Card
+            </Text>
+          </View>
+          <View>
+            <Text>
+              Children
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <View
+    accessibilityElementsHidden={true}
+    accessible={false}
+    importantForAccessibility="no-hide-descendants"
+    style={
+      Array [
+        Object {
+          "position": "absolute",
+          "top": 0,
+          "width": "100%",
+        },
+        Object {
+          "marginTop": AnimatedValue {
+            " __value": 0,
+          },
+          "opacity": 0,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#d31145",
+            "borderBottomLeftRadius": 16,
+            "flexDirection": "row",
+            "overflow": "visible",
+            "paddingHorizontal": 16,
+            "width": "100%",
+            "zIndex": 98,
+          },
+          Object {
+            "backgroundColor": "#d31145",
+            "paddingBottom": AnimatedValue {
+              " __value": 16,
+            },
+            "paddingTop": 36,
+          },
+          false,
+          undefined,
+        ]
+      }
+    >
+      <View
+        accessibilityHint="This is accessible header"
+        accessibilityLabel="Accessible Header"
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "flexGrow": 1,
+                "flexShrink": 1,
+              },
+              Object {
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <View
+            accessibilityRole="text"
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                false,
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "flex-start",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+            testID="titleIconTextTestID"
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "flex-start",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                numberOfLines={1}
+                style={
+                  Array [
+                    undefined,
+                    Array [
+                      Object {
+                        "fontSize": 17,
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#fff",
+                      },
+                    ],
+                  ]
+                }
+              >
+                Header
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PageLayoutWithHeader render with non animated header properly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    bounces={false}
+    onScroll={[Function]}
+    scrollEventThrottle={16}
+    testID="scrollViewTestId"
+  >
+    <View />
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "position": "absolute",
+        "top": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#d31145",
+            "borderBottomLeftRadius": 16,
+            "flexDirection": "row",
+            "overflow": "visible",
+            "paddingHorizontal": 16,
+            "width": "100%",
+            "zIndex": 98,
+          },
+          Object {
+            "backgroundColor": "rgba(0,0,0,0)",
+            "paddingBottom": AnimatedValue {
+              " __value": 46,
+            },
+            "paddingTop": 36,
+          },
+          false,
+          undefined,
+        ]
+      }
+      testID="headerTestId"
+    >
+      <View
+        accessibilityHint="This is accessible header"
+        accessibilityLabel="Accessible Header"
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "height": 24,
+                "minWidth": 24,
+              },
+              Object {
+                "marginRight": 12,
+              },
+            ]
+          }
+          testID="leftButtonContainerTestID"
+        >
+          <View>
+            <View
+              accessibilityHint="This button will take you home"
+              accessibilityLabel="Accessible header button left"
+              accessible={true}
+              focusable={false}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Array [
+                  false,
+                  undefined,
+                ]
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                    },
+                    Array [
+                      Object {
+                        "borderRadius": 20,
+                        "elevation": 5,
+                        "margin": -8,
+                        "padding": 8,
+                        "shadowColor": "#596c80",
+                        "shadowOffset": Object {
+                          "height": 3,
+                          "width": 2,
+                        },
+                        "shadowOpacity": 0.15,
+                        "shadowRadius": 2,
+                      },
+                      Object {
+                        "backgroundColor": "#d31145",
+                      },
+                    ],
+                  ]
+                }
+                testID="touchableWrapperTestID"
+              >
+                <View
+                  style={
+                    Array [
+                      undefined,
+                      undefined,
+                    ]
+                  }
+                >
+                  <svg
+                    data-file-name="SvgMenu"
+                    fill="#fff"
+                    height={24}
+                    width={24}
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

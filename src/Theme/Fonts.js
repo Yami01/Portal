@@ -1,13 +1,10 @@
 /**
- * This file contains all application's style relative to fonts
- */
-import { StyleSheet } from "react-native"
-
-/**
  *
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
  * @return {*}
  */
+import { StyleSheet } from 'react-native'
+
 export default function ({ FontSize, Colors }) {
   return StyleSheet.create({
     textSmall: {

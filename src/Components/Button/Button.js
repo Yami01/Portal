@@ -43,7 +43,7 @@ import {
 
 import ButtonStyles from './styles'
 import type { IconPropsType, PropsType } from './types'
-import Colors from 'react-native/Libraries/NewAppScreen/components/Colors'
+import { Colors } from '@/Theme/Variables'
 import Text from '@/Components/Text'
 import Icons from '@/Assets/Icons'
 

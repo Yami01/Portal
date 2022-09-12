@@ -7,14 +7,14 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import { useDispatch } from 'react-redux'
 import { useTranslation } from 'react-i18next'
-import { Brand } from '@/Components'
 import { useTheme } from '@/Hooks'
+import { Brand } from '@/Components'
+import { useDispatch } from 'react-redux'
 import { useLazyFetchOneQuery } from '@/Services/modules/users'
 import { changeTheme } from '@/Store/Theme'
 
-const ExampleContainer = () => {
+const HomeComponent = () => {
   const { t } = useTranslation()
   const { Common, Fonts, Gutters, Layout } = useTheme()
   const dispatch = useDispatch()
@@ -98,4 +98,4 @@ const ExampleContainer = () => {
   )
 }
 
-export default ExampleContainer
+export default HomeComponent

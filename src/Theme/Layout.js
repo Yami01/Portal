@@ -1,10 +1,10 @@
-import { StyleSheet } from "react-native"
-
 /**
  *
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
  * @return {*}
  */
+import { StyleSheet } from 'react-native'
+
 export default function () {
   return StyleSheet.create({
     /* Column Layouts */

@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderBackground render with default props 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d31145",
+        "borderBottomLeftRadius": 16,
+        "flexDirection": "row",
+        "overflow": "visible",
+        "paddingHorizontal": 16,
+        "width": "100%",
+        "zIndex": 98,
+      },
+      Object {
+        "backgroundColor": "#d31145",
+        "paddingBottom": AnimatedValue {
+          " __value": 16,
+        },
+        "paddingTop": 36,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  <View />
+</View>
+`;
+
+exports[`HeaderBackground render with large padding 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d31145",
+        "borderBottomLeftRadius": 16,
+        "flexDirection": "row",
+        "overflow": "visible",
+        "paddingHorizontal": 16,
+        "width": "100%",
+        "zIndex": 98,
+      },
+      Object {
+        "backgroundColor": "#d31145",
+        "paddingBottom": AnimatedValue {
+          " __value": 20,
+        },
+        "paddingTop": 40,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  <View />
+</View>
+`;
+
+exports[`HeaderBackground render with shadow 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d31145",
+        "borderBottomLeftRadius": 16,
+        "flexDirection": "row",
+        "overflow": "visible",
+        "paddingHorizontal": 16,
+        "width": "100%",
+        "zIndex": 98,
+      },
+      Object {
+        "backgroundColor": "#d31145",
+        "paddingBottom": AnimatedValue {
+          " __value": 16,
+        },
+        "paddingTop": 36,
+      },
+      Object {
+        "elevation": 12,
+        "shadowColor": "#363e3f",
+        "shadowOffset": Object {
+          "height": 5,
+          "width": 0,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 10,
+      },
+      undefined,
+    ]
+  }
+  testID="headerBackgroundTestID"
+>
+  <View />
+</View>
+`;
+
+exports[`HeaderBackground render without status bar padding 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#d31145",
+        "borderBottomLeftRadius": 16,
+        "flexDirection": "row",
+        "overflow": "visible",
+        "paddingHorizontal": 16,
+        "width": "100%",
+        "zIndex": 98,
+      },
+      Object {
+        "backgroundColor": "#d31145",
+        "paddingBottom": AnimatedValue {
+          " __value": 16,
+        },
+        "paddingTop": 16,
+      },
+      false,
+      undefined,
+    ]
+  }
+>
+  <View />
+</View>
+`;

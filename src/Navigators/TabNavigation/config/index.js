@@ -6,19 +6,22 @@
  *
  */
 import { ExampleContainer } from '@/Containers'
+import ProfileContainer from '@/Containers/Profile/ProfileContainer'
+import StatisticContainer from '@/Containers/Statistic/StaticticContainer'
+import HomeContainer from '@/Containers/Home/HomeContainer'
 
 export const ROUTES = [
   {
     key: 'home',
     name: 'Home',
     title: 'Home',
-    screen: ExampleContainer,
+    screen: HomeContainer,
   },
   {
     key: 'statistic',
     name: 'Statistic',
     title: 'Statistic',
-    screen: ExampleContainer,
+    screen: StatisticContainer,
   },
   // {
   //   key: 'publishedDocuments',
@@ -36,6 +39,6 @@ export const ROUTES = [
     key: 'profile',
     name: 'Profile',
     title: 'Profile',
-    screen: ExampleContainer,
+    screen: ProfileContainer,
   },
 ]

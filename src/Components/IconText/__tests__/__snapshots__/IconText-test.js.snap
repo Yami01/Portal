@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconText IconText render 1`] = `
+<View
+  accessibilityHint="Center Icon Hint"
+  accessibilityLabel="Center Icon"
+  accessibilityRole="button"
+  accessible={true}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      false,
+      Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "flexDirection": "row",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          undefined,
+          Array [
+            Object {
+              "fontSize": 17,
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#fff",
+            },
+          ],
+        ]
+      }
+    >
+      Test Icon Label
+    </Text>
+    <View
+      accessibilityHint="This button will take to the notification"
+      accessibilityLabel="Accessible  header button 1"
+      style={
+        Array [
+          undefined,
+          undefined,
+        ]
+      }
+    >
+      <svg
+        data-file-name="SvgArrowDropDown"
+        fill="#fff"
+      />
+    </View>
+  </View>
+</View>
+`;

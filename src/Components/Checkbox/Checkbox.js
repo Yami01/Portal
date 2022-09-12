@@ -10,7 +10,7 @@ import type { AbstractComponent, Node } from "react"
 import React, { memo } from "react"
 import { Checkbox as RNCheckbox } from "react-native-paper"
 import type { PropsType } from "./types"
-import Colors from "react-native/Libraries/NewAppScreen/components/Colors"
+import { Colors } from '@/Theme/Variables'
 
 const Checkbox: AbstractComponent<PropsType> = memo(
   (props: PropsType): Node => {

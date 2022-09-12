@@ -6,7 +6,7 @@
  */
 import { StyleSheet } from 'react-native'
 import type { BottomSheetStylesType } from '../types'
-import Colors from 'react-native/Libraries/NewAppScreen/components/Colors'
+import { Colors } from '@/Theme/Variables'
 
 const BottomSheetStyles: BottomSheetStylesType = StyleSheet.create({
   container: {

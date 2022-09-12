@@ -12,7 +12,7 @@ import { View } from 'react-native'
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder'
 
 import type { PropsType } from './types'
-import Colors from 'react-native/Libraries/NewAppScreen/components/Colors'
+import { Colors } from '@/Theme/Variables'
 
 const LazyLoad: AbstractComponent<PropsType> = memo(
   (props: PropsType): Node => {

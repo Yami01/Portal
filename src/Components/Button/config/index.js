@@ -4,7 +4,7 @@
  * @flow
  *
  */
-import Colors from "react-native/Libraries/NewAppScreen/components/Colors"
+import { Colors } from '@/Theme/Variables'
 
 export const LARGE_BUTTON_HEIGHT = 56
 export const MEDIUM_BUTTON_HEIGHT = 48

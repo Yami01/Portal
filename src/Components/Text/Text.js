@@ -6,13 +6,13 @@
  *
  */
 
-import type { AbstractComponent, Node } from "react"
-import React, { memo, useMemo } from "react"
-import { Text as LibText } from "react-native"
-import type { TextStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
-import { useTheme } from "react-native-paper"
-import { FONT_REGULAR } from "./config"
-import type { PropsType } from "./types"
+import type { AbstractComponent, Node } from 'react'
+import React, { memo, useMemo } from 'react'
+import { Text as LibText } from 'react-native'
+import type { TextStyleProp } from 'react-native/Libraries/StyleSheet/StyleSheet'
+import { useTheme } from 'react-native-paper'
+import { FONT_REGULAR } from './config'
+import type { PropsType } from './types'
 
 const Text: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const {

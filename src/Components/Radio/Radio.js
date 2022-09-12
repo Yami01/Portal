@@ -6,11 +6,11 @@
  *
  */
 
-import type { AbstractComponent, Node } from "react"
-import React, { memo } from "react"
-import { RadioButton as RNRadioButton } from "react-native-paper"
-import type { PropsType } from "./types"
-import Colors from "react-native/Libraries/NewAppScreen/components/Colors"
+import type { AbstractComponent, Node } from 'react'
+import React, { memo } from 'react'
+import { RadioButton as RNRadioButton } from 'react-native-paper'
+import type { PropsType } from './types'
+import { Colors } from '@/Theme/Variables'
 
 const Radio: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const { checked, onPress, value, color, uncheckedColor, disabled, testID } =

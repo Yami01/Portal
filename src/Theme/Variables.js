@@ -18,9 +18,13 @@ export const Colors = {
   success: '#28a745',
   error: '#dc3545',
   black: '#000000',
-  gray: '#ebecec',
+  dark_gray: '#363e3f',
+  gray: '#596c80',
   gray_650: '#5b636b',
   gray_250: '#d6d8da',
+  gray_750: '#333d47',
+  gray_950: '#5c646c',
+  red_950: '#e10c0a',
 }
 
 export const NavigationColors = {
@@ -39,10 +43,10 @@ export const FontSize = {
 /**
  * Metrics Sizes
  */
-const tiny = 5 // 10
-const small = tiny * 2 // 10
-const regular = tiny * 3 // 15
-const large = regular * 2 // 30
+const tiny = 4 // 8
+const small = tiny * 2 // 8
+const regular = tiny * 3 // 12
+const large = regular * 2 // 24
 export const MetricsSizes = {
   tiny,
   small,

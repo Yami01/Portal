@@ -11,7 +11,7 @@ import {
   themes,
 } from '@/Theme'
 
-export default function () {
+const useTheme = () => {
   // Get the scheme device
   const colorScheme = useColorScheme()
 
@@ -149,3 +149,5 @@ const mergeNavigationTheme = (reactNavigationTheme, overrideColors) => ({
     ...overrideColors,
   },
 })
+
+export default useTheme

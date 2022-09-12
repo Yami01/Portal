@@ -54,7 +54,7 @@ exports[`Checkbox Checkbox Render 1`] = `
       style={
         Array [
           Object {
-            "color": "#444",
+            "color": "rgba(0, 0, 0, 0.54)",
             "fontSize": 24,
           },
           Array [
@@ -102,7 +102,7 @@ exports[`Checkbox Checkbox Render 1`] = `
         collapsable={false}
         style={
           Object {
-            "borderColor": "#444",
+            "borderColor": "rgba(0, 0, 0, 0.54)",
             "borderWidth": 0,
             "height": 14,
             "width": 14,

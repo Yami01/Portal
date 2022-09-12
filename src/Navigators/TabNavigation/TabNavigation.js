@@ -30,7 +30,16 @@ const TabNavigation: AbstractComponent<PropsType> = memo((): Node => {
     >
       {ROUTES.map((route: RouteType): Node => {
         const { key, name, screen } = route
-        return <Tab.Screen key={key} name={name} component={screen} />
+        return (
+          <Tab.Screen
+            key={key}
+            name={name}
+            component={screen}
+            options={{
+              headerShown: false,
+            }}
+          />
+        )
       })}
     </Tab.Navigator>
   )

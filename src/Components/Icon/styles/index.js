@@ -7,7 +7,7 @@
 
 import { StyleSheet } from 'react-native'
 import type { IconStyleType } from '../types'
-import Colors from 'react-native/Libraries/NewAppScreen/components/Colors'
+import { Colors } from '@/Theme/Variables'
 
 const IconStyles: IconStyleType = StyleSheet.create({
   center: {

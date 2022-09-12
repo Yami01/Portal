@@ -80,7 +80,7 @@ exports[`Radio Radio Render 1`] = `
     collapsable={false}
     style={
       Object {
-        "borderColor": "#1292B4",
+        "borderColor": "#E14032",
         "borderRadius": 10,
         "borderWidth": 2,
         "height": 20,
