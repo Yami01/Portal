@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Image, View } from 'react-native'
-import { useTheme } from '@/Hooks'
+import {Image, View} from 'react-native'
+import {useTheme} from '@/Hooks'
 
 const Brand = ({ height, width, mode }) => {
   const { Layout, Images } = useTheme()

@@ -2,17 +2,16 @@
  *
  * LazyLoad
  * @format
- * @flow
  *
  */
 
-import React, { memo } from 'react'
-import type { Node, AbstractComponent } from 'react'
-import { View } from 'react-native'
+import type {AbstractComponent, Node} from 'react'
+import React, {memo} from 'react'
+import {View} from 'react-native'
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder'
 
-import type { PropsType } from './types'
-import { Colors } from '@/Theme/Variables'
+import type {PropsType} from './types'
+import {Colors} from '@/Theme/Variables'
 
 const LazyLoad: AbstractComponent<PropsType> = memo(
   (props: PropsType): Node => {

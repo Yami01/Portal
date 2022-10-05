@@ -25,6 +25,7 @@ export const Colors = {
   gray_750: '#333d47',
   gray_950: '#5c646c',
   red_950: '#e10c0a',
+  line_divider: '#e9e9e9',
 }
 
 export const NavigationColors = {

@@ -1,15 +1,11 @@
 /**
  *
  * @format
- * @flow
  *
  */
 
-import type {
-  ViewStyleProp,
-  TextStyleProp,
-} from 'react-native/Libraries/StyleSheet/StyleSheet'
-import type { PressEvent } from 'react-native/Libraries/Types/CoreEventTypes'
+import type {TextStyleProp, ViewStyleProp,} from 'react-native/Libraries/StyleSheet/StyleSheet'
+import type {PressEvent} from 'react-native/Libraries/Types/CoreEventTypes'
 
 export type IconType = {
   group: string,

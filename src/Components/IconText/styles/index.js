@@ -1,13 +1,12 @@
 /**
  *
  * @format
- * @flow
  *
  */
 
-import { StyleSheet } from 'react-native'
+import {StyleSheet} from 'react-native'
 
-import type { StyleType } from '../types'
+import type {StyleType} from '../types'
 
 const IconTextStyles: StyleType = StyleSheet.create({
   container: {

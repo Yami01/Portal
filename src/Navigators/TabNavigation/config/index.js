@@ -2,25 +2,23 @@
  *
  * TabNavigation configs
  * @format
- * @flow
  *
  */
-import { ExampleContainer } from '@/Containers'
 import ProfileContainer from '@/Containers/Profile/ProfileContainer'
 import StatisticContainer from '@/Containers/Statistic/StaticticContainer'
-import HomeContainer from '@/Containers/Home/HomeContainer'
+import HomeNavigation from "@/Navigators/HomeNavigation";
 
 export const ROUTES = [
   {
     key: 'home',
-    name: 'Home',
-    title: 'Home',
-    screen: HomeContainer,
+    name: 'MainHome',
+    title: 'MainHome',
+    screen: HomeNavigation,
   },
   {
     key: 'statistic',
-    name: 'Statistic',
-    title: 'Statistic',
+    name: 'MainStatistic',
+    title: 'MainStatistic',
     screen: StatisticContainer,
   },
   // {
@@ -37,8 +35,8 @@ export const ROUTES = [
   // },
   {
     key: 'profile',
-    name: 'Profile',
-    title: 'Profile',
+    name: 'MainProfile',
+    title: 'MainProfile',
     screen: ProfileContainer,
   },
 ]

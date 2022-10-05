@@ -1,7 +1,7 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-import { useTranslation } from 'react-i18next'
-import { useTheme } from '@/Hooks'
+import {Text, View} from 'react-native'
+import {useTranslation} from 'react-i18next'
+import {useTheme} from '@/Hooks'
 
 const StatisticComponent = () => {
   const { Layout, Fonts } = useTheme()

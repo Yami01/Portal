@@ -3,7 +3,7 @@
  * @param Theme can be spread like {Colors, NavigationColors, Gutters, Layout, Common, ...args}
  * @return {*}
  */
-import { StyleSheet } from 'react-native'
+import {StyleSheet} from 'react-native'
 
 export default function ({ FontSize, Colors }) {
   return StyleSheet.create({

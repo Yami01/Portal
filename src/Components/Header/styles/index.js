@@ -1,46 +1,26 @@
 /**
  *
  * @format
- * @flow
  *
  */
 
-import { StyleSheet } from 'react-native'
+import {StyleSheet} from 'react-native'
+import type {HeaderStyleTypes} from '../types'
+import {Colors} from '@/Theme/Variables'
+import {NAV_BAR_HEIGHT, STATUS_BAR_HEIGHT} from "@/Components/Header/config";
 
-import type { HeaderStyleType } from '../types'
-
-const HeaderStyles: HeaderStyleType = StyleSheet.create({
-  buttonContainer: {
-    minWidth: 24,
-    height: 24,
-  },
-  buttonContainerLeft: {
-    marginRight: 12,
-  },
-  buttonContainerLeftOnRight: {
-    marginLeft: 12,
-    marginRight: 4,
-  },
-  buttonContainerRight: {
-    marginLeft: 12,
-  },
+const HeaderStyles: HeaderStyleTypes = StyleSheet.create({
   container: {
-    flexShrink: 1,
-    flexGrow: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    height: NAV_BAR_HEIGHT,
+    width: '100%',
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.line_divider,
   },
-  titleContainer: {
-    flexShrink: 1,
-    flexGrow: 1,
-    flexDirection: 'row',
-  },
-  progressBarContainer: {
-    width: '60%',
-    right: 0,
-    top: 8,
-    position: 'absolute',
-    alignSelf: 'center',
+  statusBar: {
+    height: STATUS_BAR_HEIGHT,
+    backgroundColor: Colors.white,
   },
 })
 

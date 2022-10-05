@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import { setDefaultTheme } from '@/Store/Theme'
-import { navigateAndSimpleReset } from '@/Navigators/utils'
+import React, {useEffect} from 'react'
+import {setDefaultTheme} from '@/Store/Theme'
+import {navigateAndSimpleReset} from '@/Navigators/utils'
 import SplashComponent from '@/Containers/Splash/Component/SplashComponent'
 
 const SplashContainer = () => {

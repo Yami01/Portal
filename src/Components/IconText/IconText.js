@@ -2,20 +2,18 @@
  *
  * IconText
  * @format
- * @flow
  *
  */
 
-import React, { memo } from 'react'
-import type { Node, AbstractComponent } from 'react'
-import { View } from 'react-native'
-import { TouchableRipple } from 'react-native-paper'
+import type {AbstractComponent, Node} from 'react'
+import React, {memo} from 'react'
+import {View} from 'react-native'
+import {TouchableRipple} from 'react-native-paper'
 import IconTextStyles from './styles'
-import type { PropsType } from './types'
-import { Colors } from '@/Theme/Variables'
+import type {PropsType} from './types'
+import {Colors} from '@/Theme/Variables'
 import Text from '@/Components/Text'
 import Icon from '@/Components/Icon'
-import fontWeightOptions from '@/Components/Text'
 
 const IconText: AbstractComponent<PropsType> = memo(
   (props: PropsType): Node => {

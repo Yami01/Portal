@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import {StyleSheet} from "react-native"
 
 /**
  * Generate Styles depending on MetricsSizes vars availabled at ./Theme/Variables

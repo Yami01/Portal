@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/Fonts/antfill.ttf",
+      "sha1": "56960e7721fc92b62e0f7c4d131ffe34ed042c49"
+    },
+    {
+      "path": "src/Assets/Fonts/antoutline.ttf",
+      "sha1": "66720607b7496a48f145425386b2082b73662fd1"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/account-maintenance-active.svg",
+      "sha1": "21d40d8a2ea5e4f5067d5ac61c3ebe207e6d00ed"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/account-maintenance.svg",
+      "sha1": "47e5ad3ee4e3255c111756aeb8a0ce5d7f3f38b5"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/dashboard-active.svg",
+      "sha1": "604287516b2417d68663064bcf9014410dc647cd"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/dashboard.svg",
+      "sha1": "96492ce8b2ac1ee36008094494b62d01b0d6b7b8"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/index.js",
+      "sha1": "f03d5be6b5f77c4cd0bc6b1ede507ce9feeef532"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/settings-active.svg",
+      "sha1": "639bbd42833bf726ba2bebb3fe03597eb12c65d2"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/settings.svg",
+      "sha1": "45996cc278e0040a190e0a213f7ecbf60b65bcd1"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/tag-active.svg",
+      "sha1": "0953e4038a399f413b639e9522bff675eec9ff2d"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/tag.svg",
+      "sha1": "107135c3ad7dbca46b47c6f7add803c3bb321e3f"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/task-list-active.svg",
+      "sha1": "6bf28846e8dc41942321821ae3867cb423e19d9e"
+    },
+    {
+      "path": "src/Assets/Icons/bottomNavigation/task-list.svg",
+      "sha1": "d15df7d9a8bc85706d6f4dcfd78504f8b024b4c1"
+    },
+    {
+      "path": "src/Assets/Icons/general/default.svg",
+      "sha1": "4d1c90194382d73c7435047c868eb67e8b4cb697"
+    },
+    {
+      "path": "src/Assets/Icons/general/index.js",
+      "sha1": "b0fb1991d9caa00cc82ecb679898d775c0dd4d35"
+    },
+    {
+      "path": "src/Assets/Icons/index.js",
+      "sha1": "304fdb0eeb7d6ae928f819d454d6f5c2e7ac528d"
+    },
+    {
+      "path": "src/Assets/Images/TOM.png",
+      "sha1": "43a0eaef6a0aad0c693793e3ed5013558a86c578"
+    },
+    {
+      "path": "src/Assets/ScreenLoader.json",
+      "sha1": "d0185a3c62d9d65ce8005996e634b7f713c65da8"
+    }
+  ]
+}

@@ -2,7 +2,6 @@
  *
  * LazyLoad Test
  * @format
- * @flow
  *
  */
 

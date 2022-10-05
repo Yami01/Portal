@@ -1,8 +1,8 @@
 import React from 'react'
-import { ActivityIndicator, Text, View } from 'react-native'
-import { useTranslation } from 'react-i18next'
-import { useTheme } from '@/Hooks'
-import { Brand } from '@/Components'
+import {ActivityIndicator, Text, View} from 'react-native'
+import {useTranslation} from 'react-i18next'
+import {useTheme} from '@/Hooks'
+import {Brand} from '@/Components'
 
 const SplashComponent = () => {
   const { Layout, Gutters, Fonts } = useTheme()

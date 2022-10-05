@@ -1,12 +1,11 @@
 /**
  *
  * @format
- * @flow
  *
  */
 
-import type { BottomTabPageNavigationPropsType } from '@types/Navigation'
-import type { ComponentType } from 'react'
+import type {BottomTabPageNavigationPropsType} from '@types/Navigation'
+import type {ComponentType} from 'react'
 
 export type PropsType = {}
 

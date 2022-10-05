@@ -3,6 +3,7 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
+install! 'cocoapods', :disable_input_output_paths => true
 
 production = ENV["PRODUCTION"] == "1"
 

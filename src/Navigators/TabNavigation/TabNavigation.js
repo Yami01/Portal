@@ -2,17 +2,16 @@
  *
  * LoginStack
  * @format
- * @flow
  *
  */
 
-import React, { memo, useMemo } from 'react'
-import type { Node, AbstractComponent } from 'react'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+import type {AbstractComponent, Node} from 'react'
+import React, {memo, useMemo} from 'react'
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 
-import { ROUTES } from './config'
+import {ROUTES} from './config'
 
-import type { PropsType, RouteType } from './types'
+import type {PropsType, RouteType} from './types'
 
 const Tab = createBottomTabNavigator()
 

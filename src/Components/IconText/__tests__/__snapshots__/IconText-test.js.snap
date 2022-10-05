@@ -2,8 +2,8 @@
 
 exports[`IconText IconText render 1`] = `
 <View
-  accessibilityHint="Center Icon Hint"
-  accessibilityLabel="Center Icon"
+  accessibilityHint="Center Header Hint"
+  accessibilityLabel="Center Header"
   accessibilityRole="button"
   accessible={true}
   focusable={true}
@@ -53,7 +53,7 @@ exports[`IconText IconText render 1`] = `
         ]
       }
     >
-      Test Icon Label
+      Test Header Label
     </Text>
     <View
       accessibilityHint="This button will take to the notification"

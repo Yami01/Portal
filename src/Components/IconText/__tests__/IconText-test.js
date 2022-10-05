@@ -2,18 +2,17 @@
  *
  * IconText Test
  * @format
- * @flow
  *
  */
 
 import React from 'react'
-import { render, fireEvent } from '@testing-library/react-native'
+import {fireEvent, render} from '@testing-library/react-native'
 
-import { WHITE } from '@colors'
+import {WHITE} from '@colors'
 import IconText from '../IconText'
 
 describe('IconText', () => {
-  const label = 'Test Icon Label'
+  const label = 'Test Header Label'
   const labelColor = '#123456'
   const centerIcon = {
     fillColor: WHITE,
