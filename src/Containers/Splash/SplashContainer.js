@@ -11,7 +11,7 @@ const SplashContainer = () => {
       }, 2000),
     )
     await setDefaultTheme({ theme: 'default', darkMode: null })
-    navigateAndSimpleReset('Auth')
+    navigateAndSimpleReset('Main')
   }
 
   useEffect(() => {

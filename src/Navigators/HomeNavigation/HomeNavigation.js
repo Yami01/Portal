@@ -5,13 +5,13 @@
  *
  */
 
-import type {AbstractComponent, Node} from 'react'
-import React, {memo} from 'react'
-import {createStackNavigator} from '@react-navigation/stack'
+import type { AbstractComponent, Node } from "react"
+import React, { memo } from "react"
+import { createStackNavigator } from "@react-navigation/stack"
 
-import {ROUTES} from './config'
+import { ROUTES } from "./config"
 
-import type {PropsType} from './types'
+import type { PropsType } from "./types"
 
 const Stack = createStackNavigator()
 

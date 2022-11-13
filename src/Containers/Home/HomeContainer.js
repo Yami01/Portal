@@ -1,7 +1,7 @@
-import React, {useCallback, useMemo, useState} from 'react'
-import HomeComponent from '@/Containers/Home/Component/HomeComponent'
-import {mockSlider} from "@/Containers/Home/Config";
-import type {PropsType} from "@/Containers/Home/Types";
+import React, { useCallback, useMemo, useState } from "react"
+import HomeComponent from "@/Containers/Home/Component/HomeComponent"
+import { mockSlider } from "@/Containers/Home/Config"
+import type { PropsType } from "@/Containers/Home/Types"
 
 const HomeContainer = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);

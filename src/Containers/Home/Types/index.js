@@ -3,7 +3,7 @@
  * @format
  *
  */
-import type {TextStyleProp, ViewStyleProp} from "react-native/Libraries/StyleSheet/StyleSheet";
+import type { TextStyleProp, ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
 
 export type HomeComponentSliderItemPropsType = {
   name: string,

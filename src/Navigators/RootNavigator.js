@@ -7,6 +7,7 @@ import {navigationRef} from './utils'
 import SplashContainer from '@/Containers/Splash/SplashContainer'
 import AuthNavigation from '@/Navigators/AuthNavigation'
 import MainNavigation from "@/Navigators/MainNavigation";
+import HomeContainer from "@/Containers/Home/HomeContainer"
 
 const Stack = createStackNavigator()
 
@@ -22,15 +23,8 @@ const RootNavigator = () => {
         <Stack.Navigator screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Splash" component={SplashContainer} />
           <Stack.Screen
-            name="Auth"
-            component={AuthNavigation}
-            options={{
-              animationEnabled: false,
-            }}
-          />
-          <Stack.Screen
             name="Main"
-            component={MainNavigation}
+            component={HomeContainer}
             options={{
               headerShown: false,
               animationEnabled: false,

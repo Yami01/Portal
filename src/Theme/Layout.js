@@ -89,8 +89,62 @@ export default function () {
       height: '100%',
       width: '100%',
     },
+    col1: {
+      width: '10%',
+    },
+    col2: {
+      width: '20%',
+    },
+    col3: {
+      width: '30%',
+    },
+    col4: {
+      width: '40%',
+    },
+    col5: {
+      width: '50%',
+    },
+    col6: {
+      width: '60%',
+    },
+    col7: {
+      width: '70%',
+    },
+    col8: {
+      width: '80%',
+    },
+    col9: {
+      width: '90%',
+    },
     fullWidth: {
       width: '100%',
+    },
+    row1: {
+      height: '10%',
+    },
+    row2: {
+      height: '20%',
+    },
+    row3: {
+      height: '30%',
+    },
+    row4: {
+      height: '40%',
+    },
+    row5: {
+      height: '50%',
+    },
+    row6: {
+      height: '60%',
+    },
+    row7: {
+      height: '70%',
+    },
+    row8: {
+      height: '80%',
+    },
+    row9: {
+      height: '90%',
     },
     fullHeight: {
       height: '100%',

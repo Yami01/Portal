@@ -3,8 +3,8 @@
  * @format
  *
  */
-import {Colors} from "@/Theme/Variables";
-import {HomeComponentSliderItemPropsType} from "@/Containers/Home/Types";
+import { Colors } from "@/Theme/Variables"
+import { HomeComponentSliderItemPropsType } from "@/Containers/Home/Types"
 
 export const mockSlider: Array<HomeComponentSliderItemPropsType> = [
 	{

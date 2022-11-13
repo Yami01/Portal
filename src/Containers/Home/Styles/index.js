@@ -4,8 +4,8 @@
  *
  */
 
-import {StyleSheet} from 'react-native';
-import {HomeComponentStylesType} from "@/Containers/Home/Types";
+import { StyleSheet } from "react-native"
+import { HomeComponentStylesType } from "@/Containers/Home/Types"
 
 
 const HomeComponentStyles: HomeComponentStylesType = StyleSheet.create({
