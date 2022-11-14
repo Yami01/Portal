@@ -32,6 +32,7 @@ const Input: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
 		extraText,
 		inputType = 'default',
 		isTextArea = false,
+		placeholder,
     textInputProps,
 	} = props;
 	const {Gutters, Layout} = useTheme();
@@ -55,7 +56,9 @@ const Input: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
 						control={control}
 						render={({field: {onChange, onBlur, value}}) => (
 							<TextInput
-								style={[Layout.fullSize, Layout.fill, Layout.fullHeight, Gutters.smallLPadding, style, InputComponentStyles.textInputStyle]}
+							     placeholder={placeholder}
+								 placeholderTextColor = 'white'
+								style={[Layout.fullSize, Layout.fill, Layout.fullHeight, Gutters.smallLPadding, style, InputComponentStyles.textInputStyle, {backgroundColor: 'white',opacity : 0.4,borderRadius : 9,}]}
 								multiline={isTextArea}
 								numberOfLines={5}
 								onBlur={onBlur}

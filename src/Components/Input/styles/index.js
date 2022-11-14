@@ -13,10 +13,10 @@ const InputComponentStyles: InputComponentStylesType = StyleSheet.create({
 		width: '100%',
 		justifyContent: 'center',
 		alignItems: 'center',
-		borderColor: Colors.black,
 		borderWidth: 1,
 		height: 40,
-		borderRadius: 4,
+		borderColor: 'rgba(255, 255, 255, 0.5)',
+		borderRadius: 10,
 		marginBottom: 4
 	},
 	errorStyle: {
