@@ -8,6 +8,7 @@ import ScreenContainer from "@/Components/ScreenContainer"
 import { Button } from "@ant-design/react-native"
 import type { PropsType } from "@/Containers/Home/Types"
 import { SceneMap, TabBar, TabBarItem, TabView } from "react-native-tab-view"
+import { Colors } from "@/Theme/Variables"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const { slider, onSelectedIndexChange, selectedIndex } = props
@@ -56,7 +57,6 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   }
 
   const renderTabBarItem = (props) => {
-  	console.log(props.focused)
 		return (
 			<TabBarItem
 				key={props.route.key}
@@ -67,16 +67,13 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 	}
 
   const renderTabBar = props => {
-    console.log(props?.navigationState?.routes[props?.navigationState?.index])
-    const focused = props?.navigationState?.routes[props?.navigationState?.index] === props?.navigationState?.index
-    console.log(focused)
     return (
       <TabBar
         {...props}
-        indicatorStyle={{ backgroundColor: "transparent" }}
+        indicatorStyle={[{backgroundColor: Colors.transparent}]}
         renderTabBarItem={renderTabBarItem}
         style={{
-          backgroundColor: "rgba(51, 51, 51, 0.68)",
+          backgroundColor: 'rgba(51, 51, 51, 0.68)',
           position: "absolute",
           top: 20,
           width: "50%",

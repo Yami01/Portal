@@ -14,7 +14,7 @@ export const Colors = {
   inputBackground: '#FFFFFF',
   white: '#ffffff',
   text: '#212529',
-  primary: '#E14032',
+  primary: '#FFFFFF',
   success: '#28a745',
   error: '#dc3545',
   black: '#000000',
@@ -26,6 +26,13 @@ export const Colors = {
   gray_950: '#5c646c',
   red_950: '#e10c0a',
   line_divider: '#e9e9e9',
+  blue: '#2f3490',
+  ant_blue_7: '#096dd9',
+  ant_gray_2: '#fafafa',
+  ant_gray_4: '#f0f0f0',
+  red: '#e1171e',
+  green: '#009e0f',
+  orange: 'orange'
 }
 
 export const NavigationColors = {
