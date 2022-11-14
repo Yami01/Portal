@@ -19,6 +19,7 @@ export const Colors = {
   error: '#dc3545',
   black: '#000000',
   dark_gray: '#363e3f',
+  charcoal: '#494949',
   gray: '#596c80',
   gray_650: '#5b636b',
   gray_250: '#d6d8da',
@@ -55,6 +56,8 @@ const tiny = 4 // 8
 const small = tiny * 2 // 8
 const regular = tiny * 3 // 12
 const large = regular * 2 // 24
+const xLarge = regular * 3 // 36
+
 export const MetricsSizes = {
   tiny,
   small,

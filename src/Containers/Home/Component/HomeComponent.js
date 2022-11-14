@@ -1,19 +1,20 @@
 import type { AbstractComponent, Node } from "react"
 import React, { memo } from "react"
-import { Text, useWindowDimensions, View, TouchableNativeFeedback } from "react-native"
+import { Text, useWindowDimensions, View } from "react-native"
 import { useTranslation } from "react-i18next"
 import { useTheme } from "@/Hooks"
-import ScreenLayout from "@/Components/ScreenLayout"
-import ScreenContainer from "@/Components/ScreenContainer"
-import { Button } from "@ant-design/react-native"
 import type { PropsType } from "@/Containers/Home/Types"
 import { SceneMap, TabBar, TabBarItem, TabView } from "react-native-tab-view"
-import {useForm} from "react-hook-form"
-import Input from '@/Components/Input';
+import { useForm } from "react-hook-form"
+import Input from "@/Components/Input"
 import { TouchableOpacity } from "react-native-gesture-handler"
+import { Colors } from "@/Theme/Variables"
+import LiveContainer from "@/Containers/Live/LiveContainer"
+import ScreenContainer from "@/Components/ScreenContainer"
+import ScreenLayout from "@/Components/ScreenLayout"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
-  const { slider, onSelectedIndexChange, selectedIndex } = props
+  const {} = props
   const { t } = useTranslation()
   const { Common, Fonts, Gutters, Layout } = useTheme()
 
@@ -31,18 +32,8 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   //  mode: 'onBlur',
   //  reValidateMode: 'onChange',
   });
-  
-  
-  const FirstRoute = () => (
-    <ScreenContainer backgroundType={"image"} backgroundImage={require("@/Assets/Images/bgr_login.png")}>
-			<View style={[Layout.row4]}/>
-      <ScreenLayout scrollable style={[Layout.fill]}>
-				<Button type={'primary'} size={'large'} onPress={() => {}}>
-					Create new password
-				</Button>
-      </ScreenLayout>
-    </ScreenContainer>
-  )
+
+  const FirstRoute = () => (<LiveContainer />)
 
   const SecondRoute = () => (
     <View style={{ flex: 1, backgroundColor: "#673ab7" }} />
@@ -66,23 +57,23 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
         <Text style={{ color: "white", fontSize: 24, textAlign: 'center',paddingBottom : 20,paddingTop : 20}}>Đăng nhập tài khoản</Text>
         <Input label={''} fieldName={'userName'} control={control} placeholder = {'Tên đăng nhập'}
         onBlur = {() => {
-          if(control.userName == ' ') {
+          if(control.userName === ' ') {
             console.log("askldfndkf");
           }
         }}
         />
-        <View style = {{height: 10}}></View>
+        <View style = {{ height: 10 }}/>
         <Input label={''} fieldName={'password'} control={control} placeholder = {'Mật khẩu'} />
 
-      <View style = {{flexDirection : "row",justifyContent: 'space-between',marginTop : 20}}> 
+      <View style = {{flexDirection : "row",justifyContent: 'space-between',marginTop : 20}}>
             <TouchableOpacity style={{backgroundColor: 'red', borderRadius: 10, borderWidth: 1,
                 borderColor: 'black'}}>
               <Text style={{
                 padding: 10,
-                width: '100%', 
+                width: '100%',
                 textAlign: 'center',
-              
-  
+
+
               }}>
                 Button
               </Text>
@@ -121,30 +112,26 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
   const renderLabel = ({ route, focused }) => {
     if (focused) {
-      return (<Text style={{color: 'white'}}>{route.title}</Text>)
+      return (<Text style={{ color: "white" }}>{route.title}</Text>)
     } else
-      return <Text style={{color: 'black'}}>{route.title}</Text>
+      return <Text style={{ color: "black" }}>{route.title}</Text>
   }
 
   const renderTabBarItem = (props) => {
-  	console.log(props.focused)
-		return (
-			<TabBarItem
-				key={props.route.key}
-				{...props}
-				renderLabel={renderLabel}
-			/>
-		)
-	}
+    return (
+      <TabBarItem
+        key={props.route.key}
+        {...props}
+        renderLabel={renderLabel}
+      />
+    )
+  }
 
   const renderTabBar = props => {
-    console.log(props?.navigationState?.routes[props?.navigationState?.index])
-    const focused = props?.navigationState?.routes[props?.navigationState?.index] === props?.navigationState?.index
-    console.log(focused)
     return (
       <TabBar
         {...props}
-        indicatorStyle={{ backgroundColor: "transparent" }}
+        indicatorStyle={[{ backgroundColor: Colors.transparent }]}
         renderTabBarItem={renderTabBarItem}
         style={{
           backgroundColor: "rgba(51, 51, 51, 0.68)",
