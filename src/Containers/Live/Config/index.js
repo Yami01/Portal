@@ -3,32 +3,12 @@
  * @format
  *
  */
-import { Colors } from "@/Theme/Variables"
-import { HomeComponentSliderItemPropsType } from "@/Containers/Home/Types"
 
-export const mockSlider: Array<HomeComponentSliderItemPropsType> = [
-	{
-		index: 0,
-		name: 'Slider1',
-		color: Colors.transparent,
-	},{
-		index: 1,
-		name: 'Slider2',
-		color: Colors.gray,
-	},
-	{
-		index: 2,
-		name: 'Slider3',
-		color: Colors.dark_gray,
-	},
-	{
-		index: 3,
-		name: 'Slider4',
-		color: Colors.line_divider,
-	},
-	{
-		index: 4,
-		name: 'Slider5',
-		color: Colors.red_950,
-	},
-]
+export const mockLiveStreamParams: Object = {
+	now_playlist_id: 1001,
+	name_now_playlist: "Device Training",
+	start_time: "08:00:00",
+	end_time: "11:45:00",
+	up_next_id: 1000,
+	name_up_next: "Store"
+}

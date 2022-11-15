@@ -13,7 +13,7 @@ export const Colors = {
   transparent: 'rgba(0,0,0,0)',
   inputBackground: '#FFFFFF',
   white: '#ffffff',
-  text: '#212529',
+  text: '#ffffff',
   primary: '#FFFFFF',
   success: '#28a745',
   error: '#dc3545',

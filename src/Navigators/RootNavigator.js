@@ -1,12 +1,10 @@
-import React from 'react'
-import {SafeAreaView, StatusBar} from 'react-native'
-import {createStackNavigator} from '@react-navigation/stack'
-import {NavigationContainer} from '@react-navigation/native'
-import {useTheme} from '@/Hooks'
-import {navigationRef} from './utils'
-import SplashContainer from '@/Containers/Splash/SplashContainer'
-import AuthNavigation from '@/Navigators/AuthNavigation'
-import MainNavigation from "@/Navigators/MainNavigation";
+import React from "react"
+import { SafeAreaView, StatusBar } from "react-native"
+import { createStackNavigator } from "@react-navigation/stack"
+import { NavigationContainer } from "@react-navigation/native"
+import { useTheme } from "@/Hooks"
+import { navigationRef } from "./utils"
+import SplashContainer from "@/Containers/Splash/SplashContainer"
 import HomeContainer from "@/Containers/Home/HomeContainer"
 
 const Stack = createStackNavigator()

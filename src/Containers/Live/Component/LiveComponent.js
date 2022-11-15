@@ -1,6 +1,6 @@
 import type { AbstractComponent, Node } from "react"
 import React, { memo, useMemo } from "react"
-import { FlatList, Image, ScrollView, Text, View } from "react-native"
+import { FlatList, Image, Text, View } from "react-native"
 import { useTranslation } from "react-i18next"
 import { useTheme } from "@/Hooks"
 import ScreenLayout from "@/Components/ScreenLayout"
@@ -68,7 +68,7 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
     }
     return (
       <View style={{ marginBottom: 52 }}>
-        <Text style={[Fonts.textRegular, { marginBottom: 32 }]}>Now playing</Text>
+        <Text style={[{ marginBottom: 32, fontSize: 34, color: 'white' }]}>Now playing</Text>
         <FlatList
           horizontal
           data={mockList}
@@ -127,7 +127,7 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
     return (
       <View style={{ marginBottom: 52 }}>
-        <Text style={[Fonts.textRegular, { marginBottom: 32 }]}>Up next</Text>
+        <Text style={[{ marginBottom: 32, fontSize: 34, color: 'white' }]}>Up next</Text>
         <FlatList
           horizontal
           data={mockList2}
@@ -141,9 +141,9 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   return (
     <ScreenContainer backgroundType={"image"} backgroundImage={require("@/Assets/Images/TOM.png")}>
       <View style={[Layout.row3]} />
-      <ScreenLayout scrollable style={{ paddingBottom: 20 }}>
+      <ScreenLayout scrollable style={[Gutters.regularBPadding]}>
         {buttonNode}
-        <View style={{ paddingBottom: 20 }}>
+        <View style={[Gutters.regularBPadding]}>
           {nowPlayListNode}
           {upNextNode}
         </View>

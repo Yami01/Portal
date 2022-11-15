@@ -12,6 +12,7 @@ import { Colors } from "@/Theme/Variables"
 import LiveContainer from "@/Containers/Live/LiveContainer"
 import ScreenContainer from "@/Components/ScreenContainer"
 import ScreenLayout from "@/Components/ScreenLayout"
+import LibraryContainer from "@/Containers/Library/LibraryContainer"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const {} = props
@@ -35,8 +36,7 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
   const FirstRoute = () => (<LiveContainer />)
 
-  const SecondRoute = () => (
-    <View style={{ flex: 1, backgroundColor: "#673ab7" }} />
+  const SecondRoute = () => (<LibraryContainer />
   )
 
   const ThirdRoute = () => (
