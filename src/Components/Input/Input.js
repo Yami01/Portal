@@ -14,6 +14,7 @@ import InputComponentStyles from '@/Components/Input/styles';
 import {useTheme} from '@/Hooks';
 import {Icon, View} from '@ant-design/react-native';
 import {Colors} from '@/Theme/Variables';
+import { ColorSpace } from 'react-native-reanimated';
 
 const Input: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
 	const {
@@ -40,7 +41,6 @@ const Input: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
 	const handleFocus = () => {
 		clearErrors && fieldName && clearErrors([`${fieldName}`]);
 	};
-
 	return (
 		<>
 			{label && <Text style={[Gutters.miniBMargin]}>{label}</Text>}
@@ -57,7 +57,7 @@ const Input: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
 						render={({field: {onChange, onBlur, value}}) => (
 							<TextInput
 							     placeholder={placeholder}
-								 placeholderTextColor = 'white'
+								 placeholderTextColor = 'red'
 								style={[Layout.fullSize, Layout.fill, Layout.fullHeight, Gutters.smallLPadding, style, InputComponentStyles.textInputStyle, {backgroundColor: 'white',opacity : 0.4,borderRadius : 9,}]}
 								multiline={isTextArea}
 								numberOfLines={5}
