@@ -12,7 +12,7 @@ import LiveContainer from "@/Containers/Live/LiveContainer"
 import ScreenContainer from "@/Components/ScreenContainer"
 import ScreenLayout from "@/Components/ScreenLayout"
 import LibraryContainer from "@/Containers/Library/LibraryContainer"
-import ProfileComponent from "@/Containers/Profile/Component/ProfileComponent"
+import ProfileContainer from "@/Containers/Profile/ProfileContainer"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const {} = props
@@ -25,7 +25,7 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   const SecondRoute = () => (<LibraryContainer />
   )
 
-  const ThirdRoute = () => (<ProfileComponent />)
+  const ThirdRoute = () => (<ProfileContainer />)
 
   const renderScene = SceneMap({
     first: FirstRoute,

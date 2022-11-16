@@ -56,9 +56,9 @@ const Input: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
 						control={control}
 						render={({field: {onChange, onBlur, value}}) => (
 							<TextInput
-							     placeholder={placeholder}
-								 placeholderTextColor = 'red'
-								style={[Layout.fullSize, Layout.fill, Layout.fullHeight, Gutters.smallLPadding, style, InputComponentStyles.textInputStyle, {backgroundColor: 'white',opacity : 0.4,borderRadius : 9,}]}
+								placeholder={placeholder}
+								placeholderTextColor={Colors.white}
+								style={[Layout.fullSize, Layout.fill, Layout.fullHeight, Gutters.smallLPadding, style, InputComponentStyles.textInputStyle]}
 								multiline={isTextArea}
 								numberOfLines={5}
 								onBlur={onBlur}

@@ -13,7 +13,7 @@ const InputComponentStyles: InputComponentStylesType = StyleSheet.create({
 		width: '100%',
 		justifyContent: 'center',
 		alignItems: 'center',
-		borderWidth: 1,
+		borderWidth: 0,
 		height: 40,
 		borderColor: 'rgba(255, 255, 255, 0.5)',
 		borderRadius: 10,
@@ -35,6 +35,8 @@ const InputComponentStyles: InputComponentStylesType = StyleSheet.create({
 	},
 	textInputStyle: {
 		color: Colors.black,
+		backgroundColor : 'rgba(255, 255, 255,0.3)',
+		borderRadius: 10
 	},
 });
 
