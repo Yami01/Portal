@@ -1,7 +1,7 @@
 import type { AbstractComponent, Node } from "react"
 import React, { memo } from "react"
 import type { PropsType } from "./types"
-import { TouchableOpacity, View } from "react-native"
+import { TouchableOpacity } from "react-native"
 import { Text } from "@ant-design/react-native"
 import { useTheme } from "@/Hooks"
 import ButtonComponentStyles from "./styles"

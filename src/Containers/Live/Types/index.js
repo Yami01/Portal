@@ -3,7 +3,7 @@
  * @format
  *
  */
-import type { ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
+import type { TextStyleProp, ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
 
 export type LiveComponentStreamParamsPropsType = {
   now_playlist_id: number,
@@ -14,12 +14,35 @@ export type LiveComponentStreamParamsPropsType = {
   name_up_next: string,
 };
 
+export type LiveComponentListVideosPropsType = {
+  id: number,
+  name: string,
+  description: string,
+  url: string,
+  thumbnail: string,
+  date_created: string,
+};
+
+export type LiveComponentListPropsType = {
+  id: number,
+  name: string,
+  date_created: string,
+  status: string,
+  description: string,
+  videos: Array<LiveComponentListVideosPropsType>,
+  listType?: string,
+};
+
 export type PropsType = {
-  selectedIndex: number,
-  onSelectedIndexChange: (index: number) => void,
+  nowPLayingProps: LiveComponentListPropsType,
+  upNextProps: LiveComponentListPropsType,
+  backgroundImage: string,
+  isLoading: boolean,
 };
 
 export type LiveComponentStylesType = {
   listItem: ViewStyleProp,
   imageContainer: ViewStyleProp,
+  listContainer: ViewStyleProp,
+  listName: TextStyleProp,
 }

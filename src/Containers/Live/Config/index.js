@@ -12,3 +12,8 @@ export const mockLiveStreamParams: Object = {
 	up_next_id: 1000,
 	name_up_next: "Store"
 }
+
+export const LIST_TYPE = {
+	NOW_PLAYING: 'NOW_PLAYING',
+	UP_NEXT: 'UP_NEXT',
+}

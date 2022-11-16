@@ -9,9 +9,9 @@ import ScreenContainer from "@/Components/ScreenContainer"
 import LibraryComponentStyles from "@/Containers/Library/Styles"
 
 const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
-  const { storeListProps, trainingListProps } = props;
-  const { Layout, Fonts, Gutters } = useTheme();
-  const { t } = useTranslation();
+  const { storeListProps, trainingListProps, isLoading } = props
+  const { Layout, Fonts, Gutters } = useTheme()
+  const { t } = useTranslation()
 
   const storeListNode = useMemo((): Node => {
     if (!storeListProps) return null
@@ -20,7 +20,9 @@ const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
       return (
         <View style={[Layout.column, LibraryComponentStyles.listItem]}>
           <Image style={[LibraryComponentStyles.imageContainer]}
-                 source={{ uri: item?.thumbnail }} resizeMode={"cover"} />
+                 source={{ uri: item?.thumbnail }}
+                 defaultSource={require("@/Assets/Images/demo.png")}
+                 resizeMode={"cover"} />
           <Text style={[Fonts.textRegular]}>{item?.name}</Text>
         </View>
       )
@@ -46,7 +48,9 @@ const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
       return (
         <View style={[Layout.column, LibraryComponentStyles.listItem]}>
           <Image style={[LibraryComponentStyles.imageContainer]}
-                 source={{ uri: item?.thumbnail }} resizeMode={"cover"} />
+                 source={{ uri: item?.thumbnail }}
+                 defaultSource={require("@/Assets/Images/demo.png")}
+                 resizeMode={"cover"} />
           <Text style={[Fonts.textRegular]}>{item?.name}</Text>
         </View>
       )
@@ -66,7 +70,8 @@ const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
   }, [])
 
   return (
-    <ScreenContainer backgroundType={"image"} backgroundImage={require("@/Assets/Images/demo.png")}>
+    <ScreenContainer showLoaderModal={isLoading} backgroundType={"image"}
+                     backgroundImage={require("@/Assets/Images/demo.png")}>
       <View style={[Layout.row4]} />
       <ScreenLayout scrollable style={[Gutters.regularBPadding]}>
         <View style={[Gutters.regularBPadding]}>

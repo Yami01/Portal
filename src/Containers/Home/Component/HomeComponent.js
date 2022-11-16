@@ -13,17 +13,19 @@ import ScreenContainer from "@/Components/ScreenContainer"
 import ScreenLayout from "@/Components/ScreenLayout"
 import LibraryContainer from "@/Containers/Library/LibraryContainer"
 import ProfileContainer from "@/Containers/Profile/ProfileContainer"
+import ProfileComponent from "@/Containers/Profile/Component/ProfileComponent"
+import HomeComponentStyles from "@/Containers/Home/Styles"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const {} = props
-  const { t } = useTranslation()
-  const { Common, Fonts, Gutters, Layout } = useTheme()
-
+  const { t } = useTranslation();
+  const { Common, Fonts, Gutters, Layout } = useTheme();
+  const layout = useWindowDimensions();
+  const [index, setIndex] = React.useState(0);
 
   const FirstRoute = () => (<LiveContainer />)
 
-  const SecondRoute = () => (<LibraryContainer />
-  )
+  const SecondRoute = () => (<LibraryContainer />)
 
   const ThirdRoute = () => (<ProfileContainer />)
 
@@ -33,9 +35,6 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
     third: ThirdRoute,
   })
 
-  const layout = useWindowDimensions()
-
-  const [index, setIndex] = React.useState(0)
   const [routes] = React.useState([
     { key: "first", title: "Trực tiếp" },
     { key: "second", title: "Thư viện" },
@@ -44,16 +43,19 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
   const renderLabel = ({ route, focused }) => {
     if (focused) {
-      return (<Text style={{ color: "white" }}>{route.title}</Text>)
+      return (<Text style={[HomeComponentStyles.activeTabLabel]}>{route?.title}</Text>)
     } else
-      return <Text style={{ color: "black" }}>{route.title}</Text>
+      return <Text style={[HomeComponentStyles.inActiveTabLabel]}>{route?.title}</Text>
   }
 
   const renderTabBarItem = (props) => {
+    const activeTab = props?.route?.key === props?.navigationState?.routes[index]?.key
+
     return (
       <TabBarItem
-        key={props.route.key}
+        key={props?.route?.key}
         {...props}
+        style={[activeTab && HomeComponentStyles.activeTab]}
         renderLabel={renderLabel}
       />
     )
@@ -65,14 +67,7 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
         {...props}
         indicatorStyle={[{ backgroundColor: Colors.transparent }]}
         renderTabBarItem={renderTabBarItem}
-        style={{
-          backgroundColor: "rgba(51, 51, 51, 0.68)",
-          position: "absolute",
-          top: 20,
-          width: "50%",
-          borderRadius: 50,
-          alignSelf: "center",
-        }}
+        style={[HomeComponentStyles.tabBarContainer]}
       />
     )
   }

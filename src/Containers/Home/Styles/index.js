@@ -6,24 +6,29 @@
 
 import { StyleSheet } from "react-native"
 import { HomeComponentStylesType } from "@/Containers/Home/Types"
+import { Colors } from "@/Theme/Variables"
 
 
 const HomeComponentStyles: HomeComponentStylesType = StyleSheet.create({
-  wrapper: {
-    backgroundColor: '#fff',
-    width: '100%',
-    height: 400,
+  tabBarContainer: {
+    backgroundColor: "rgba(51, 51, 51, 0.68)",
+    position: "absolute",
+    top: 20,
+    width: "50%",
+    borderRadius: 50,
+    alignSelf: "center",
   },
-  containerHorizontal: {
-    flexGrow: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 400,
+  activeTab: {
+    backgroundColor: Colors.white,
+    borderRadius: 50,
   },
-  text: {
-    color: '#fff',
-    fontSize: 36,
+  activeTabLabel: {
+    color: Colors.black,
+    textAlign: "center",
   },
-});
+  inActiveTabLabel: {
+    color: Colors.white,
+  },
+})
 
-export default HomeComponentStyles;
+export default HomeComponentStyles
