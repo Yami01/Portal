@@ -4,6 +4,7 @@
  *
  */
 import type { TextStyleProp, ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
+import { Colors } from "@/Theme/Variables"
 
 export type HomeComponentSliderItemPropsType = {
   name: string,
@@ -18,7 +19,8 @@ export type PropsType = {
 };
 
 export type HomeComponentStylesType = {
-  wrapper: ViewStyleProp,
-  containerHorizontal: ViewStyleProp,
-  text: TextStyleProp,
+  tabBarContainer: ViewStyleProp,
+  activeTab: ViewStyleProp,
+  activeTabLabel: TextStyleProp,
+  inActiveTabLabel: TextStyleProp,
 }

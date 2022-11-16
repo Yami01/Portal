@@ -9,3 +9,11 @@ export const getStreamParamsService = () => {
 			.catch((error) => reject((error?.response?.data)));
 	});
 };
+
+export const getNowPlayingListService = (id: number) => {
+	return new Promise((resolve, reject) => {
+		apiUtils.get(`${endPointConfig.library}/${id}`)
+			.then((apiRes: ResponsePropTypes) => resolve((apiRes?.data)))
+			.catch((error) => reject((error?.response?.data)));
+	});
+};

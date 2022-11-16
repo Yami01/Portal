@@ -20,12 +20,13 @@ export type LibraryComponentListPropsType = {
   date_created: string,
   status: string,
   description: string,
-  videos: Array<LibraryComponentListVideosPropsType>
+  videos: Array<LibraryComponentListVideosPropsType>,
 };
 
 export type PropsType = {
   storeListProps: LibraryComponentListPropsType,
   trainingListProps: LibraryComponentListPropsType,
+  isLoading: boolean,
 };
 
 export type LibraryComponentStylesType = {
