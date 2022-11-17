@@ -9,16 +9,16 @@ import { LibraryComponentListPropsType } from "@/Containers/Library/Types"
 export type LibraryReducerType = {
 	isLoading: boolean,
 	isSuccess: boolean,
-	storeList: Array<LibraryComponentListPropsType>,
-	trainingList: Array<LibraryComponentListPropsType>,
+	storeList: LibraryComponentListPropsType,
+	trainingList: LibraryComponentListPropsType,
 	errors: any,
 }
 
 const initialState: LibraryReducerType = {
 	isLoading: false,
 	isSuccess: false,
-	storeList: [],
-	trainingList: [],
+	storeList: undefined,
+	trainingList: undefined,
 	errors: null,
 };
 

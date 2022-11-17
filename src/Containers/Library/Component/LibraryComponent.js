@@ -9,7 +9,7 @@ import ScreenContainer from "@/Components/ScreenContainer"
 import LibraryComponentStyles from "@/Containers/Library/Styles"
 
 const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
-  const { storeListProps, trainingListProps, isLoading } = props
+  const { storeListProps, trainingListProps, isLoading, backgroundImage } = props
   const { Layout, Fonts, Gutters } = useTheme()
   const { t } = useTranslation()
 
@@ -71,7 +71,7 @@ const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
 
   return (
     <ScreenContainer showLoaderModal={isLoading} backgroundType={"image"}
-                     backgroundImage={require("@/Assets/Images/demo.png")}>
+                     backgroundImage={{ uri: backgroundImage }}>
       <View style={[Layout.row4]} />
       <ScreenLayout scrollable style={[Gutters.regularBPadding]}>
         <View style={[Gutters.regularBPadding]}>
@@ -84,4 +84,4 @@ const LibraryComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
 })
 
 
-export default LibraryComponent
+export default React.memo(LibraryComponent)

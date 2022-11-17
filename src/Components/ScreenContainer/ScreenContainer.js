@@ -28,6 +28,7 @@ const ScreenContainer: AbstractComponent<PropsType> = memo(
 					<View style={[ScreenContainerStyles.container, {backgroundColor}]}>
 						<ImageBackground
 							source={backgroundImage}
+							resizeMode='cover'
 							style={ScreenContainerStyles.imageBackground}>
 							{children}
 							<ScreenLoader showLoader={showLoaderModal}/>
@@ -42,7 +43,7 @@ const ScreenContainer: AbstractComponent<PropsType> = memo(
 					</View>
 				);
 			}
-		}, [children])
+		}, [children, backgroundImage])
 
 		return (
 			<React.Fragment>

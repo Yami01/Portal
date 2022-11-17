@@ -25,9 +25,9 @@ export type LiveReducerType = {
 const initialState: LiveReducerType = {
   isLoading: false,
   isSuccess: false,
-  liveParams: {},
-  nowPlayingList: {},
-  upNextList: {},
+  liveParams: undefined,
+  nowPlayingList: undefined,
+  upNextList: undefined,
   errors: null,
 }
 

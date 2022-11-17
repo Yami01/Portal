@@ -1,9 +1,13 @@
-import React, { useEffect, useMemo, useState } from "react"
+import React, { useCallback, useEffect, useMemo, useState } from "react"
 import LiveComponent from "@/Containers/Live/Component/LiveComponent"
 import { useDispatch, useSelector } from "react-redux"
 import { getNowPlayingList, getStreamParams, getUpNextList } from "@/Store/Live/Live.actions"
 import { liveSelector } from "@/Store/Live/Live.reducer"
-import { LiveComponentListPropsType, LiveComponentStreamParamsPropsType } from "@/Containers/Live/Types"
+import {
+  LiveComponentListPropsType,
+  LiveComponentListVideosPropsType,
+  LiveComponentStreamParamsPropsType,
+} from "@/Containers/Live/Types"
 import { LibraryComponentListPropsType } from "@/Containers/Library/Types"
 
 const LiveContainer = () => {
@@ -14,24 +18,38 @@ const LiveContainer = () => {
   useEffect(() => {
     if (!liveReducer?.liveParams) {
       dispatch(getStreamParams()).then((responseParams: LiveComponentStreamParamsPropsType) => {
-        responseParams?.now_playlist_id && dispatch(getNowPlayingList(responseParams?.now_playlist_id)).then((response: LiveComponentListPropsType) => {
-          setBackgroundImage(response?.videos?.[0]?.thumbnail)
-        })
-        responseParams?.up_next_id && dispatch(getUpNextList(responseParams?.up_next_id))
+        responseParams?.now_playlist_id && !liveReducer?.nowPlayingList && dispatch(getNowPlayingList(responseParams?.now_playlist_id))
+        responseParams?.up_next_id && !liveReducer?.upNextList && dispatch(getUpNextList(responseParams?.up_next_id))
       }).catch((error) => console.log(error))
     }
   }, [])
 
+  useEffect(() => {
+    if (liveReducer?.upNextList && !backgroundImage) setBackgroundImage(liveReducer?.upNextList?.videos?.[0]?.thumbnail)
+  }, [liveReducer?.upNextList])
+
   const nowPLayingProps = useMemo((): LibraryComponentListPropsType => {
     return liveReducer?.nowPlayingList && liveReducer?.nowPlayingList
-  }, [liveReducer])
+  }, [liveReducer?.nowPlayingList])
 
   const upNextProps = useMemo((): LibraryComponentListPropsType => {
     return liveReducer?.upNextList && liveReducer?.upNextList
-  }, [liveReducer])
+  }, [liveReducer?.upNextList])
 
-  return <LiveComponent backgroundImage={backgroundImage} nowPLayingProps={nowPLayingProps} upNextProps={upNextProps}
+  const onStartNowPlayingList = useCallback(() => {
+    console.log(liveReducer?.nowPlayingList)
+  }, [])
+
+  const onPressVideo = useCallback((videoItem: LiveComponentListVideosPropsType) => {
+    setBackgroundImage(videoItem?.thumbnail)
+  }, [])
+
+  return <LiveComponent backgroundImage={backgroundImage}
+                        nowPLayingProps={nowPLayingProps}
+                        upNextProps={upNextProps}
+                        onStartNowPlayingList={onStartNowPlayingList}
+                        onPressVideo={onPressVideo}
                         isLoading={liveReducer?.isLoading} />
 }
 
-export default LiveContainer
+export default React.memo(LiveContainer)

@@ -38,6 +38,8 @@ export type PropsType = {
   upNextProps: LiveComponentListPropsType,
   backgroundImage: string,
   isLoading: boolean,
+  onPressVideo: (video: LiveComponentListVideosPropsType) => void,
+  onStartNowPlayingList: () => void,
 };
 
 export type LiveComponentStylesType = {

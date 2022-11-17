@@ -1,6 +1,6 @@
 import type { AbstractComponent, Node } from "react"
 import React, { memo, useMemo } from "react"
-import { FlatList, Image, Text, View } from "react-native"
+import { FlatList, Image, Text, TouchableOpacity, View } from "react-native"
 import { useTranslation } from "react-i18next"
 import { useTheme } from "@/Hooks"
 import ScreenLayout from "@/Components/ScreenLayout"
@@ -11,15 +11,14 @@ import { PlayIcon } from "@/Assets/Icons"
 import LiveComponentStyles from "@/Containers/Live/Styles"
 
 const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
-  const { nowPLayingProps, upNextProps, isLoading, backgroundImage } = props
+  const { nowPLayingProps, upNextProps, isLoading, backgroundImage, onPressVideo, onStartNowPlayingList } = props
   const { t } = useTranslation()
   const { Common, Fonts, Gutters, Layout } = useTheme()
 
   const buttonNode = useMemo((): Node => {
     return (
       <View style={{ marginBottom: 60 }}>
-        <Button label={"Play"} iconComponent={<PlayIcon />} onPress={() => {
-        }} />
+        <Button label={"Play"} iconComponent={<PlayIcon />} onPress={onStartNowPlayingList} />
       </View>
     )
   }, [])
@@ -29,13 +28,13 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
     const renderItem = ({ item }) => {
       return (
-        <View style={[Layout.column, LiveComponentStyles.listItem]}>
+        <TouchableOpacity style={[Layout.column, LiveComponentStyles.listItem]} onPress={() => onPressVideo(item)}>
           <Image style={[LiveComponentStyles.imageContainer]}
                  source={{ uri: item?.thumbnail }}
                  defaultSource={require("@/Assets/Images/demo.png")}
                  resizeMode={"cover"} />
           <Text style={[Fonts.textRegular]}>{item?.name}</Text>
-        </View>
+        </TouchableOpacity>
       )
     }
     return (
@@ -81,7 +80,7 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
   return (
     <ScreenContainer showLoaderModal={isLoading} backgroundType={"image"}
-                     backgroundImage={require("@/Assets/Images/demo.png")}>
+                     backgroundImage={{ uri: backgroundImage }}>
       <View style={[Layout.row3]} />
       <ScreenLayout scrollable style={[Gutters.regularBPadding]}>
         {buttonNode}
@@ -94,4 +93,4 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   )
 })
 
-export default LiveComponent
+export default React.memo(LiveComponent)

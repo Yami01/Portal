@@ -17,11 +17,16 @@ import ProfileComponent from "@/Containers/Profile/Component/ProfileComponent"
 import HomeComponentStyles from "@/Containers/Home/Styles"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
-  const {} = props
+  const {} = props;
   const { t } = useTranslation();
   const { Common, Fonts, Gutters, Layout } = useTheme();
   const layout = useWindowDimensions();
   const [index, setIndex] = React.useState(0);
+  const routes = [
+    { key: "first", title: "Trực tiếp" },
+    { key: "second", title: "Thư viện" },
+    { key: "third", title: "Tài khoản" },
+  ]
 
   const FirstRoute = () => (<LiveContainer />)
 
@@ -34,12 +39,6 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
     second: SecondRoute,
     third: ThirdRoute,
   })
-
-  const [routes] = React.useState([
-    { key: "first", title: "Trực tiếp" },
-    { key: "second", title: "Thư viện" },
-    { key: "third", title: "Tài khoản" },
-  ])
 
   const renderLabel = ({ route, focused }) => {
     if (focused) {
@@ -73,16 +72,14 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   }
 
   return (
-    <>
-      <TabView
-        renderTabBar={renderTabBar}
-        navigationState={{ index, routes }}
-        renderScene={renderScene}
-        onIndexChange={setIndex}
-        initialLayout={{ width: layout.width }}
-      />
-    </>
+    <TabView
+      renderTabBar={renderTabBar}
+      navigationState={{ index, routes }}
+      renderScene={renderScene}
+      onIndexChange={setIndex}
+      initialLayout={{ width: layout.width }}
+    />
   )
 })
 
-export default HomeComponent
+export default React.memo(HomeComponent)
