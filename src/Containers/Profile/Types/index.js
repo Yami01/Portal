@@ -16,4 +16,9 @@ export type ProfileComponentStylesType = {
 
 }
 
+export type ResponseLogin = {
+  token: String,
+  expiration: String,
+}
+
 export default ProfileComponentStylesType
