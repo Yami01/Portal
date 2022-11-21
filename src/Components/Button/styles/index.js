@@ -4,7 +4,6 @@ import { ButtonComponentStyleTypes } from "@/Components/Button/types"
 
 const ButtonComponentStyles: ButtonComponentStyleTypes = {
   buttonContainer: {
-    maxWidth: 160,
     backgroundColor: Colors.white,
     alignItems: 'center',
     justifyContent: 'center',
@@ -12,7 +11,6 @@ const ButtonComponentStyles: ButtonComponentStyleTypes = {
     padding: 8,
   },
   buttonText: {
-    marginLeft: 12,
     color: Colors.charcoal,
   },
 };

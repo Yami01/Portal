@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react'
 import ProfileComponent from '@/Containers/Profile/Component/ProfileComponent'
 import {ProfileComponentFormPropsType} from './Types'
+
 const ProfileContainer = () => {
 
   const secondaryButtonPress = useCallback((formData: ProfileComponentFormPropsType) => {

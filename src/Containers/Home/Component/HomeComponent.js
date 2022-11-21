@@ -1,25 +1,17 @@
-import { AbstractComponent, Node, useState } from "react"
-import React, { memo } from "react"
-import { Text, useWindowDimensions, View } from "react-native"
+import React, { AbstractComponent, memo, Node } from "react"
+import { Text, useWindowDimensions } from "react-native"
 import { useTranslation } from "react-i18next"
-import { useTheme } from "@/Hooks"
 import type { PropsType } from "@/Containers/Home/Types"
 import { SceneMap, TabBar, TabBarItem, TabView } from "react-native-tab-view"
-import Input from "@/Components/Input"
-import { TouchableOpacity } from "react-native-gesture-handler"
 import { Colors } from "@/Theme/Variables"
 import LiveContainer from "@/Containers/Live/LiveContainer"
-import ScreenContainer from "@/Components/ScreenContainer"
-import ScreenLayout from "@/Components/ScreenLayout"
 import LibraryContainer from "@/Containers/Library/LibraryContainer"
 import ProfileContainer from "@/Containers/Profile/ProfileContainer"
-import ProfileComponent from "@/Containers/Profile/Component/ProfileComponent"
 import HomeComponentStyles from "@/Containers/Home/Styles"
 
 const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
   const {} = props;
   const { t } = useTranslation();
-  const { Common, Fonts, Gutters, Layout } = useTheme();
   const layout = useWindowDimensions();
   const [index, setIndex] = React.useState(0);
   const routes = [

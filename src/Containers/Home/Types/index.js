@@ -4,7 +4,6 @@
  *
  */
 import type { TextStyleProp, ViewStyleProp } from "react-native/Libraries/StyleSheet/StyleSheet"
-import { Colors } from "@/Theme/Variables"
 
 export type HomeComponentSliderItemPropsType = {
   name: string,

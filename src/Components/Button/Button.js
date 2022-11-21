@@ -14,7 +14,7 @@ const Button: AbstractComponent<PropsType> = memo((props: PropsType): Node => {
       disabled={isDisable}
       style={[Layout.row, ButtonComponentStyles.buttonContainer, btnStyle]}>
       {iconComponent && iconComponent}
-      <Text style={[Fonts.textRegular, ButtonComponentStyles.buttonText, textStyle]}>{label}</Text>
+      <Text style={[Fonts.textRegular, iconComponent && {marginLeft: 12}, ButtonComponentStyles.buttonText, textStyle]}>{label}</Text>
     </TouchableOpacity>
   )
 })

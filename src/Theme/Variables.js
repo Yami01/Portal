@@ -33,7 +33,8 @@ export const Colors = {
   ant_gray_4: '#f0f0f0',
   red: '#e1171e',
   green: '#009e0f',
-  orange: 'orange'
+  orange: 'orange',
+  blurWhite: 'rgba(255, 255, 255, 0.5)'
 }
 
 export const NavigationColors = {
