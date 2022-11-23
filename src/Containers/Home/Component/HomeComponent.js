@@ -74,4 +74,4 @@ const HomeComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
   )
 })
 
-export default React.memo(HomeComponent)
+export default HomeComponent

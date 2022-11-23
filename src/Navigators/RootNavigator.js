@@ -5,13 +5,13 @@ import { NavigationContainer } from "@react-navigation/native"
 import { useTheme } from "@/Hooks"
 import { navigationRef } from "./utils"
 import SplashContainer from "@/Containers/Splash/SplashContainer"
-import HomeContainer from "@/Containers/Home/HomeContainer"
+import HomeNavigation from "@/Navigators/HomeNavigation"
 
 const Stack = createStackNavigator()
 
 // @refresh reset
 const RootNavigator = () => {
-  const { Layout, darkMode, NavigationTheme } = useTheme()
+  const { Layout, darkMode, NavigationTheme } = useTheme();
   const { colors } = NavigationTheme
 
   return (
@@ -22,7 +22,7 @@ const RootNavigator = () => {
           <Stack.Screen name="Splash" component={SplashContainer} />
           <Stack.Screen
             name="Main"
-            component={HomeContainer}
+            component={HomeNavigation}
             options={{
               headerShown: false,
               animationEnabled: false,

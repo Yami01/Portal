@@ -17,7 +17,7 @@ const LiveComponent: AbstractComponent<PropsType> = memo((props: PropsType): Nod
 
   const buttonNode = useMemo((): Node => {
     return (
-      <View style={{ marginBottom: 60, width: 160}}>
+      <View style={{ marginBottom: 60, width: 160 }}>
         <Button label={"Play"} iconComponent={<PlayIcon />} onPress={onStartNowPlayingList} />
       </View>
     )

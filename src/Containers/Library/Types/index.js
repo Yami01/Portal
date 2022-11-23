@@ -26,6 +26,7 @@ export type LibraryComponentListPropsType = {
 export type PropsType = {
   storeListProps: LibraryComponentListPropsType,
   trainingListProps: LibraryComponentListPropsType,
+  onPressVideo: (video: LibraryComponentListVideosPropsType) => void,
   backgroundImage: string,
   isLoading: boolean,
 };

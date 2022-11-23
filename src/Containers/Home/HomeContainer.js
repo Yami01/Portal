@@ -6,4 +6,4 @@ const HomeContainer = () => {
   return <HomeComponent />
 }
 
-export default React.memo(HomeContainer)
+export default HomeContainer

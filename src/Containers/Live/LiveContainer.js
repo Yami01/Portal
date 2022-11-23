@@ -3,12 +3,10 @@ import LiveComponent from "@/Containers/Live/Component/LiveComponent"
 import { useDispatch, useSelector } from "react-redux"
 import { getNowPlayingList, getStreamParams, getUpNextList } from "@/Store/Live/Live.actions"
 import { liveSelector } from "@/Store/Live/Live.reducer"
-import {
-  LiveComponentListPropsType,
-  LiveComponentListVideosPropsType,
-  LiveComponentStreamParamsPropsType,
-} from "@/Containers/Live/Types"
+import { LiveComponentListVideosPropsType, LiveComponentStreamParamsPropsType } from "@/Containers/Live/Types"
 import { LibraryComponentListPropsType } from "@/Containers/Library/Types"
+import { navigate } from "@/Navigators/utils"
+import { SCREEN_TYPE } from "@/Containers/Live/Config"
 
 const LiveContainer = () => {
   const dispatch = useDispatch()
@@ -37,11 +35,17 @@ const LiveContainer = () => {
   }, [liveReducer?.upNextList])
 
   const onStartNowPlayingList = useCallback(() => {
-    console.log(liveReducer?.nowPlayingList)
+    navigate("Video", {
+      screenType: SCREEN_TYPE.LIVE,
+    })
   }, [])
 
   const onPressVideo = useCallback((videoItem: LiveComponentListVideosPropsType) => {
     setBackgroundImage(videoItem?.thumbnail)
+    navigate("Video", {
+      screenType: SCREEN_TYPE.LIVE,
+      video: videoItem,
+    })
   }, [])
 
   return <LiveComponent backgroundImage={backgroundImage}
