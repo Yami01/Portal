@@ -18,6 +18,7 @@ export function handleLogin(userName: String, password: String) {
                     reslove(loginResponse);
                 }).catch((error) => {
                     dispatch({type: REQUEST_LOGIN_FAILED, payload: error});
+                    reject(error);
                 }).finally(() => {
                     toggleLoading(false);
                 });

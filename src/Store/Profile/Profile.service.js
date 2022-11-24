@@ -4,7 +4,7 @@ import { ResponsePropTypes } from "../Common/Model";
 
 export const requestLogin = (userName: String, password: String) => {
     return new Promise((resolve, reject) => {
-        apiUtils.post(`${endPointConfig.login}`,{
+        apiUtils.post('Authenticate/login',{
             username: userName,
             password: password
           }).then((apiRes: ResponsePropTypes) => resolve((apiRes?.data)))

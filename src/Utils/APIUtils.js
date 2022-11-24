@@ -5,7 +5,9 @@ import store from "@/Store/store";
 
 const apiUtils = axios.create({
 	baseURL: urlConfig.baseUrl,
-
+   headers: {
+	'Content-Type' : 'application/json'
+   }
 });
 
 apiUtils.interceptors.request.use((request) => {

@@ -28,14 +28,14 @@ const ProfileComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
     } = useForm({
       resolver: yupResolver(validatorLogin),
       defaultValues: {
-        userName: "admin",
-        password: "0chomayBIK!@#",
+        userName: "",
+        password: "",
       },
       mode: "onBlur",
       reValidateMode: "onChange",
     })
 
-    console.log(control)
+    console.log(errors?.userName?.message)
     return (
       <ScreenContainer backgroundType={"image"} backgroundImage={require("@/Assets/Images/bgr_login.png")}>
         <View style={{ height: "20%" }} />
@@ -52,7 +52,7 @@ const ProfileComponent: AbstractComponent<PropsType> = memo((props: PropsType): 
                    error={errors?.password?.message} />
             <View style={{ flexDirection: "row", marginTop: 60, justifyContent: "space-between" }}>
               <View style={[Layout.fill, Gutters.smallRMargin]}>
-                <Button label={"Trở lại"} onPress={handleSubmit(secondaryButtonPress)}
+                <Button isDisable = {errors?.userName?.message != undefined} label={"Dang nhap"} onPress={handleSubmit(secondaryButtonPress)}
                         textStyle={[ProfileComponentStyles.buttonText]}
                         btnStyle={ProfileComponentStyles.backButtonStyles} />
               </View>
