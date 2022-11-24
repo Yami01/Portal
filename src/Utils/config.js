@@ -1,6 +1,7 @@
 export const urlConfig = {
-  baseUrl: 'https://91b60564-5efc-4e79-bac8-075bfeea7aca.mock.pstmn.io/',
-  // baseUrl: 'https://103.15.51.109:92/api/',
+  // baseUrl: 'https://91b60564-5efc-4e79-bac8-075bfeea7aca.mock.pstmn.io/',
+  baseUrl: 'https://103.15.51.109:92/api/',
+  
 };
 
 export const module = {
